@@ -1,8 +1,0 @@
-# === Will ignore every file in root ===
-root/*
-
-# === Will only track specific files ===
-
-# Vim files
-!root/.vimrc
-!root/.vim
