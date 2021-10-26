@@ -7,5 +7,5 @@
 # vscode settings
 .vscode
 
-# other personal ones
+# other personal ignores
 save/**/bundle

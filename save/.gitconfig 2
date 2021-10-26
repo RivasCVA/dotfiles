@@ -1,0 +1,7 @@
+[user]
+	name = Carlos Rivas
+	email = rivascarlosva@gmail.com
+[pull]
+    ff = only
+[core]
+    excludesfile = ~/.gitignore

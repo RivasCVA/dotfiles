@@ -1,7 +1,7 @@
 /**
- * Dotfile manager script.
- * This script will save all dotfiles and folders into
- * a local directory to push to GitHub or any other service.
+ * Dotfile Manager script.
+ * This script will save all files and directories into
+ * a local folder to push to GitHub or any other service.
  * 
  * How to use:
  * 
@@ -12,7 +12,7 @@
  * - Run: `g++ main.cpp && ./a.out`.
  * 
  * (3) Push the entire "dotfiles/" directory to GitHub or any other service.
- * - The "save/" directory will hold all of your dotfiles and folders.
+ * - The "save/" directory will hold all of your saved files and directories.
  * 
  * Note: The "other/" directory can be used to save other miscellaneous files and directories.
  * 
