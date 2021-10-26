@@ -1,0 +1,11 @@
+# executable files
+*.out
+
+# macos cache
+.DS_Store
+
+# vscode settings
+.vscode
+
+# other personal ones
+save/**/bundle

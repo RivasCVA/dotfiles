@@ -20,8 +20,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'itchyny/lightline.vim'
 " - Easy auto-commenter
 Plugin 'preservim/nerdcommenter'
-" - Code completion
-Plugin 'neoclide/coc.nvim'
 " - File explorer
 Plugin 'preservim/nerdtree'
 
@@ -40,7 +38,7 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 " - Set faster escape timeout delay
-set ttimeoutlen=50
+set ttimeoutlen=0
 " - Set dark background
 set background=dark
 " - Enable syntax highlighting
@@ -76,13 +74,6 @@ set noshowmode
 let g:lightline = {
       \ 'colorscheme': 'powerline',
       \ }
-
-" === PLUGIN coc.nvim CONFIG === "
-
-" - External source config file
-source ~/.vim/sources/coc-config.vim 
-" - All CoC extension
-let g:coc_global_extensions = ['coc-json', 'coc-python', 'coc-clangd']
 
 " === PLUGIN NERDTree.nvim CONFIG === "
 
