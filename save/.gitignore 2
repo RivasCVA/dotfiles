@@ -1,8 +1,0 @@
-# MacOS Cache
-.DS_Store
-
-# VSCode Settings
-.vscode
-
-# Python
-*.pyc
