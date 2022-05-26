@@ -5,4 +5,9 @@
 .vscode
 
 # Python
+__pycache__/
 *.pyc
+
+# NPM
+.node_modules/
+
