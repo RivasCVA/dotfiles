@@ -6,6 +6,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " === All Plugins === "
+" To install plugin:
+" (1) Run :PluginInstall
 " To uninstall plugin:
 " (1) Remove in ~/.vim/bundle/
 " (2) Run :PluginInstall
@@ -22,6 +24,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'preservim/nerdcommenter'
 " - File explorer
 Plugin 'preservim/nerdtree'
+" - Theme
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 filetype plugin indent on
@@ -71,9 +75,7 @@ set laststatus=2
 " - Hide default mode status
 set noshowmode
 " - Setup scheme
-let g:lightline = {
-      \ 'colorscheme': 'powerline',
-      \ }
+let g:lightline = { 'colorscheme': 'powerline' }
 
 " === PLUGIN NERDTree.nvim CONFIG === "
 
@@ -82,4 +84,3 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 " - Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
