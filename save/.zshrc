@@ -1,35 +1,20 @@
-# >>> java initialize >>>
-export JAVA_HOME=$(/usr/libexec/java_home -v 16.0.2)
-# <<< java initialize <<<
-
-# >>> oh-mypzsh initialize >>>
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/carlos/.oh-my-zsh"
-
-# Set name of the theme to load
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
+# tip: replace %m in .oh-my-zsh/themes/daveverwer.zsh-theme to a custom name
 ZSH_THEME="daveverwer"
-
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git)
-
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=244"
+plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
-# <<< oh-mypzsh initialize <<<
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# mise
+eval "$(mise activate zsh)"
 
+# ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="$(gem environment gemdir)/bin:$PATH"
+
+# go
+export GOPRIVATE=github.com/RivasCVA/*
+
+# local bin
+export PATH="$HOME/.local/bin:$PATH"
