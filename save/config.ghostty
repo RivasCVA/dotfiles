@@ -2,3 +2,4 @@ theme = Ayu
 font-size = 14
 cursor-style = block
 shell-integration-features = no-cursor
+keybind = cmd+k=text:\x0c
